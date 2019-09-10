@@ -122,4 +122,9 @@ public extension UIButton {
     self.addTarget(target, action: action, for: .touchDown)
     return self
   }
+  
+  func isUserInteractionEnabled(_ enabled: Bool) -> Self {
+     isUserInteractionEnabled = enabled
+     return self
+  }
 }
